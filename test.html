@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Stylesheet" href="/test.css">
+<link rel="Stylesheet" href="/pics/fontawesome-free-6.2.0-web/css/all.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="/test.html">Home</a>
+  <a href="#news">Versions</a>
+  <a href="#contact">Contact</a>
+
+</div>
+
+
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'main')" id="defaultOpen">Main</button>
+    <button class="tablinks" onclick="openTab(event, 'colors')">Färger</button>
+    <button class="tablinks" onclick="openTab(event, 'text')">Text</button>
+    <button class="tablinks" onclick="openTab(event, 'buttons')">Knappar</button>
+    <button class="tablinks" onclick="openTab(event, 'tables')">Tabeller</button>
+    <button class="tablinks" onclick="openTab(event, 'nav')">Navigation</button>
+    <button class="tablinks" onclick="openTab(event, 'mes')">Meddelanden</button>
+    <button class="tablinks" onclick="openTab(event, 'loding')">Laddar</button>
+    <button class="tablinks" onclick="openTab(event, 'panels')">Paneler</button>
+    <button class="tablinks" onclick="openTab(event, 'form')">Formulär</button>
+</div>
+
+<div id="main" class="tabcontent">
+    <h2>Välkommen till WK Styleguide!</h2>
+    <p><br>Här förklarar vi hur våra webbsidor ska se ut. Samt standarden dem ska ha. 
+    </p>
+    <p>Här går vi igenom färger, och lite hur knappar och menyn ska se ut.</p><br>
+</div>
+
+<div id="form" class="tabcontent">
+    <h2>Förmulärer</h2>
+    <p><br>Så här kan formulärer se ut, dem kan ha andra färger med</p><br>
+
+    <div class="container">
+        <div class="text">Contact Support</div>
+        <form>
+            <label class="lable">First Name</label><br>
+            
+            <input><br>
+            <label class="lable">Last Name</label><br>
+            <input>
+
+            <br><label class="lable">Email</label><br>
+            <input><br>
+      
+            <label class="lable">Message</label><br>
+            <textarea rows="5" max-cols="20" style="resize: none;"></textarea><br>
+            <button class="button button4" style="padding: 5px; margin: 5px;">Send</button>
+            </div>
+          </form> 
+          <p><br>Andra alternativ</p><br>
+          <div class="container">
+            <div class="text">Cancel Order</div>
+            <form>
+                <label class="lable">Why do you need to cancel?</label><br>
+                <form>
+                      <input type="radio" id="o3" name="f3" value="3">
+                      <label for="o3">option1</label><br>
+                      <input type="radio" id="o2" name="f2" value="2">
+                      <label for="o2">option2</label><br>
+                      <input type="radio" id="o1" name="f1" value="1">
+                      <label for="o1">option3<br></label>
+                    
+                    <button class="button button4" style="padding: 5px;">Send</button>
+                    </form>  
+                </div>
+              </form> 
+              <p><br> </p>
+              <div class="container">
+                <div class="text">Choose all!</div>
+                <form>
+                    <form>
+                        <input type="checkbox" id="a1" name="v1" value="1">
+                        <label for="v1"> option 1</label><br>
+                        <input type="checkbox" id="v2" name="v2" value="2">
+                        <label for="v2"> option 2 </label><br>
+                        <input type="checkbox" id="v3" name="v3" value="3">
+                        <label for="v3"> option 3<br></label>
+                        <br><button class="button button4" style="padding: 5px;">Send</button>
+                      </form> 
+                    </div>
+                  </form> 
+                  <p><br></p>
+                  
+                  <button class="button button1" id="css" onclick="openCode('form-css')">Show CSS</button>
+                  <button class="button button1" id="css" onclick="openCode('form-html')">Show HTML</button>
+
+
+                  <div class="w3-panel w3-blue w3-round-xlarge codearea" id="form-css">
+
+                    <h4>CSS Kod:</h4>
+                    <p>
+                        .lable{<br>
+                            color: #ddd;<br>
+                        }<br>
+                        .form{<br>
+                          margin: 0;<br>
+                          padding: 0;<br>
+                          outline: none;<br>
+                          box-sizing: border-box;<br>
+                          font-family:  sans-serif;<br>
+                        }<br>
+                        <br>
+                        .container{<br>
+                          max-width: 300px;<br>
+                          min-width: 300px;<br>
+                          background:#81ACA5;<br>
+                          
+                          padding: 25px 40px 10px 40px;<br>
+                          box-shadow: 0px 0px 10px rgba(17, 17, 17, 0.568);<br>
+                        }<br>
+                        .container .text{<br>
+                          text-align: center;<br>
+                          font-size: 25px;<br>
+                          font-weight: 650;<br>
+                          color: #00827A;<br>
+                          <br>
+                        }<br>
+                        
+                  </p>
+                  </div>
+
+                  <div class="codearea" id="form-html">
+                   
+                        <img src="/pics/forms.png" alt="Pic of design work" class="topics" style="width: 70%;">
+                    
+                  </div>
+
+    
+
+    </div>
+</div>
+
+<div id="panels" class="tabcontent">
+    <h2>Paneler</h2>
+    <p><br>Panelerna kan se ut på detta sätt. Dem är färgkodade för att bättre förmedla det som händer</p><br>
+    <div class="w3-container">
+        <h4>Posetive panel:</h4>
+        <div class="w3-panel w3-green w3-round-xlarge">
+          <p style="text-align: center ;">posetiv panel!</p>
+        </div>
+      </div>
+      <div class="w3-container">
+        <h4>Negativ panel:</h4>
+        <div class="w3-panel w3-red w3-round-xlarge">
+          <p style="text-align: center ;">Negativ panel!</p>
+        </div>
+      </div>
+      <div class="w3-container">
+        <h4>Neutral panel:</h4>
+        <div class="w3-panel w3-blue w3-round-xlarge">
+          <p style="text-align: center;" >Neutral panel!</p>
+        </div>
+      </div>
+      <p><br>Dessa paneler kommer från W3-schools egna bibliotek.<br>
+     "w3-panel w3-green w3-round-xlarge"<br>
+     "w3-panel w3-red w3-round-xlarge"<br>
+     "w3-panel w3-blue w3-round-xlarge"
+    </p>
+</div>
+
+<div id="loding" class="tabcontent">
+    <h2>Laddnings Indikatiorer</h2>
+    <p><br> På detta sätt ska laddnings indikatoren se ut på hemsidan.</p>
+    <br>
+    <button class="button"style="font-size:24px">Save <i class="fa fa-spinner fa-spin" style="font-size:24px"></i></button><br>
+    <p><br> Laddnings indikatorn kan även se ut som denna och kanske ligga i sidan av.<br>Den icon från FrontAwesome som andvänds är: class="fa fa-spinner fa-spin" <br>Med font storleken: 30px och 24px</p>
+   <p style="color: #00827A;"> <i class="fa fa-spinner fa-spin" style="font-size:30px"></i></p>
+   
+
+</div>
+
+<div id="nav" class="tabcontent">
+    <h2>Navigation</h2>
+    <p>navigations menyn ska vara i dem primära färgerna.</p>
+    <span class="dot1" style="width:50px; height:50px;"></span> 
+    <span class="dot2"style="width:50px; height:50px;"></span> 
+    <span class="dot3"style="width:50px; height:50px;"></span> 
+    <span class="dot4"style="width:50px; height:50px;"></span>
+    <pre></pre><p>#F14925    #F68624    #8D8145    #81ACA5</p></pre>
+ 
+    <p>Det ska finnas en topnavigering.</p>
+    <div class="topnav">
+        <a class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#offers">Offers</a>
+        <div class="topnav-right" style="float: right;">
+            <a href="#search" style="color:#81ACA5;">Search <i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+            <a href="#print"style="color:#81ACA5;">Print <i class="fa-solid fa-print"></i></a>
+          </div>
+      </div>
+      <br>
+    <p>Det ska även finnas en sido meny.
+    </p>
+    <div class="tab">
+        <button class="tablinks" id="defaultOpen">Main</button>
+          <button class="tablinks">Your Profile</button>
+         
+          <!-- <div class="subnav"> -->
+            <button class="subnavbtn" id="bnav">About <i class="fa fa-caret-down" id="subicon"></i></button>
+            <div class="subnav-content" id="subnavdiv">
+               <button class="tablinks" style="background-color:#81ACA5;">Button1</button> 
+                <button class="tablinks"style="background-color:#81ACA5;">Button2</button>
+                <button class="tablinks"style="background-color:#81ACA5;">button3</button>
+            </div>
+        <!-- </div> -->
+          <button class="tablinks">Insurance</button>
+          <button class="tablinks">Help</button>
+          <button class="tablinks">Contact</button>
+          <button class="tablinks">Prices</button>
+        </div>
+        
+</div>
+
+<div id="mes" class="tabcontent">
+    <h2>Meddelanden och varningar</h2>
+    <p>Klicka på någon av knapparna</p><br>
+
+<div class="box">
+	<a class="button button" href="#popup1" style="text-decoration:none;">Order</a>
+    <a class="button button" href="#popup2" style="text-decoration:none;">Order</a>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Success!</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			Thank you for your purchase..
+		</div>
+	</div>
+</div><br>
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>Opps..!</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                Opps.. Something went wrong. Please redo the order. 
+            </div>
+        </div>
+    </div>
+
+    <button class="button button1" id="css" onclick="openCode('mes-html')">Show HTML</button>
+    <button class="button button1" id="css" onclick="openCode('mes-css')">Show CSS</button>
+    <div class="w3-panel w3-blue w3-round-xlarge codearea" id="mes-css">
+        
+ 
+        <h4>CSS Kod:</h4>
+        <p>
+            .overlay {<br>
+                position: fixed;<br>
+                top: 0;<br>
+                bottom: 0;<br>
+                left: 0;<br>
+                right: 0;<br>
+                background: rgba(0, 0, 0, 0.7);<br>
+                visibility: hidden;<br>
+                opacity: 0;<br>
+              }<br>
+              .overlay:target {<br>
+                visibility: visible;<br>
+                opacity: 1;<br>
+              }<br>
+              <br>
+              .popup {<br>
+                margin: 70px auto;<br>
+                padding: 20px;<br>
+                background: #fff;<br>
+                border-radius: 5px;<br>
+                width: 30%;<br>
+                position: relative;<br>
+              }<br>
+              .popup .close {<br>
+                position: absolute;<br>
+                top: 20px;<br>
+                right: 30px;<br>
+                transition: all 200ms;<br>
+                font-size: 30px;<br>
+                font-weight: bold;<br>
+                text-decoration: none;<br>
+                color: #333;<br>
+              }<br>
+              .popup .close:hover {<br>
+                color: #81ACA5;<br>
+              }
+              .popup .content {<br>
+                max-height: 30%;<br>
+                overflow: auto;<br>
+              }<br>
+      </p>
+      </div>
+
+      <div class="codearea" id="mes-html">
+                   
+        <img src="/pics/meshtml.png" alt="Pic of design work" class="topics" style="width: 70%;">
+    
+  </div>
+</div>
+
+<div id="colors" class="tabcontent">
+  <h2>Färger</h2>
+  <h4>Huvud Färger </h4>
+  <span class="dot1"></span>
+  <span class="dot2"></span>
+  <span class="dot3"></span>
+  <span class="dot4"></span><br>
+  <p><pre>   #F14925      #F68624      #8D8145       #81ACA5</pre></p><br>
+  <h4>Säkundera Färger </h4>
+  <span class="dot5"></span> 
+  <span class="dot6"></span> 
+  <span class="dot7"></span><br> 
+  <p><pre> #F03C23   #f8bc87  #00827A  </pre></p>
+  <p>Dessa är överiga färger man kan använda.</p>
+  <span class="dot9"></span> 
+  <span class="dot10"></span> 
+  <span class="dot11"></span> 
+  <span class="dot12"></span> 
+  <p><pre>#914D38 #914235 #01623F #F2A53B</pre></p><br>
+  
+</div>
+
+<div id="text" class="tabcontent">
+  <h2>Text</h2>
+  <h4>Regler gällande text:</h4>
+    <p>Front-family: sans-serif.<p>
+    <p>För normal text, Font-size: 17px eller 25px.<p>
+    <p>text färgen kan vara svart eller vit beroende på bakrundsfärgen.</p>
+    
+    <h4>Header Styles:</h4>
+    <p>Stilen på rubrik kan vara lite olika bara färger och still passar in till resten av sidan. </p>
+    <h1>h1. This is a header...</h1>
+    <h2 style="font-weight:700 ; color: #00827A;">h2. This is a header...</h2>
+    <h3 style="font-style:italic">h3. This is a header...</h3>
+    <h4 style="color: #8D8145 ;">h4. This is a header...</h4>
+    <h4>Flytande text</h4>
+    <p>Stilen vanlig text är att det ska vara konsekent geneom hela hemsidan. Färgerna får vara svart eller vit beroende på bakrundsfärgen.<br>
+    storleken ska vara 17px eller 24px. samt att det ska vara i fonten sans-serif.</p>
+</div>
+
+<div id="buttons" class="tabcontent">
+<div>
+  <h2>Knappar</h2>
+  <h4>Standard knappar</h4>
+    <P>Så här ska standard knapparna se ut.</P>
+    <button class="button button1">Button1</button>
+    <button class="button button2">Button2</button>
+    <button class="button button3">Button3</button>
+    <button class="button button4">Button4</button>
+    <br>
+    <h4><br>Funktion Knappar</h4>
+    <P>Funktions knappar som spara eller print ska ha ikoner.</P>
+    <button class="button button5"><i class="fa-sharp fa-solid fa-print"></i> Print</button>
+    <button class="button button6"><i class="fa-solid fa-download"></i> Download</button>
+    <button class="button button7"><i class="fa-sharp fa-solid fa-print"></i></button>
+    <button class="button button8"><i class="fa-solid fa-download"></i></button>
+    <h4><br>Posetiva Knappar</h4>
+    <P>Posetiva knappar ska ha standard stilen men när den klickas så ska den visa att det blivit klickad.<br>
+    Färgerna på dessa knappar ska vara neutrala.</P>
+    <button class="button button9" onclick="changeText(this)">Save</button>
+    <button class="button button10" onclick="changeText(this)">OK</button>
+    <button class="button button11" onclick="changeText(this)">Create</button>
+    <h4><br>Negativa Knappar</h4>
+    <P>Negativa knappar ska ha standard stilen men när den klickas så ska den visa att det blivit klickad.<br>
+    Samt att färgerna på dessa knappar ska svara varnings färger.</P>
+    <br><button class="button button12" onclick="nchangeText(this)">Cancel</button>
+    <button class="button button13" onclick="nchangeText(this)">Quit</button>
+    <button class="button button14" onclick="nchangeText(this)">Delete</button><br>
+        </div>
+        <p><br></p>
+        <button class="button button1" id="css" onclick="openCode('button-css')">Show CSS</button>
+        <div class="w3-panel w3-blue w3-round-xlarge codearea" id="button-css">
+                  <p style="text-align: center;" ><p>
+                    Css: .button {<br>
+                        background-color: #81ACA5;<br>
+                        border: none;<br>
+                        color: white;<br>
+                        padding: 15px;<br>
+                        text-align: center;<br>
+                        font-size: 15px;<br>
+                        cursor: pointer;<br><br>
+                        border-radius: 8px;<br>
+                </p>
+                </div>
+        </div>
+
+</div>
+
+<div id="tables" class="tabcontent">
+    <h2>Tabeller</h2>
+    <p>Så här kan tabbeler se ut. Tabllerna behöver vara tydliga men annars kan man gå fritt fram här.</p>
+    <table id="customers">
+        <h3>Table1: Costumers</h3>
+        <tr>
+          <th>Firtname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>Marie</td>
+          <td>Currie</td>
+          <td>MariesCookBook@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Albert</td>
+          <td>Einstien</td>
+          <td>Einseins_thebomb77@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>Neil </td>
+            <td>Armstrong</td>
+            <td>armstrong-space001@hotmail.com</td>
+          </tr>
+          <tr>
+            <td>Hanna </td>
+            <td>Montana</td>
+            <td>supertsar123@bing.com</td>
+          </tr></table>
+    <table id="cars">
+        <h3>Table2: Cars</h3>
+            <tr>
+              <th>Amount</th>
+              <th>Model</th>
+            </tr>
+              <th>3</th>
+              <th>Volvo</th>
+            </tr>
+            <tr>
+              <th>6</th>
+              <th>Toyota</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th>Ferrari</th>
+            </tr>
+            <tr>
+              <th>2</th>
+              <th>BMW</th>
+            </tr>
+        </table>
+          <p><br></p>
+    <button class="button button1" id="css" onclick="openCode('table-css')">Show CSS</button>
+    <div class="w3-panel w3-blue w3-round-xlarge codearea" id="table-css">
+
+            <h4>CSS Kod:</h4>
+            <p>
+              #customers {<br>
+                  font-family:sans-serif;<br>
+                  border-collapse: collapse;<br>
+                  width: 100px;<br>
+                  background-color: wite;<br>
+                }<br>
+                <br>
+                #customers td, #customers th {<br>
+                  border: 1px solid #ddd;<br>
+                  padding: 8px;<br>
+                }<br>
+                #customers tr:nth-child(odd){background-color: #81ACA5;}<br>
+                <br>
+                #customers tr:hover {background-color: #abe4da}<br>
+                <br>
+                #customers th {<br>
+                  padding-top: 12px;<br>
+                  padding-bottom: 12px;<br>
+                  text-align: left;<br>
+                  background-color: #00827A;<br>
+                  color: white;<br>
+                }<br>
+          </p>
+          </div>
+        
+    </div>
+
+      
+   
+   
+</div>
+        
+            
+</div>
+
+
+
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+/*positive button change text to icon on click*/
+function changeText(id){
+    id.style.backgroundColor="#01623F";
+    id.innerHTML = '<i class="fa fa-duotone fa-check"></i>';
+}
+
+/*Negative button change text to icon on click*/
+function nchangeText(id){
+    id.style.backgroundColor="#F03C23";
+    id.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+}
+document.getElementById("bnav").onclick = function () {
+        if (document.getElementById("subnavdiv").style.display == "block") {
+            document.getElementById("subnavdiv").style.display = "none";
+             document.getElementById("subicon").classList.replace("fa-caret-up", "fa-caret-down");
+        } else {
+            document.getElementById("subnavdiv").style.display = "block";
+             document.getElementById("subicon").classList.replace("fa-caret-down", "fa-caret-up");
+        }}
+        
+function openCode(codeid) {
+        if (document.getElementById(codeid).style.display == "block") {
+            document.getElementById(codeid).style.display = "";
+        } else {
+            document.getElementById(codeid).style.display = "block";
+     }
+
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
